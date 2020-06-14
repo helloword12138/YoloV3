@@ -1,0 +1,133 @@
+/*
++--------------------------------------------------------------------------
+|   Mblog [#RELEASE_VERSION#]
+|   ========================================
+|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
+|   http://www.mtons.com
+|
++---------------------------------------------------------------------------
+*/
+/*.container */
+@media (min-width: 1200px) {
+	.container {
+		width: 1010px;
+	}
+}
+
+/* header */
+.top-wrap {position: relative; width: 100%; top: 0; left: 0;}
+
+.logo { float: left; padding: 5px 8px 8px 15px; font-size: 18px; line-height: 20px; height: 50px;}
+.logo img { height: 43px; margin-top: 0px; }
+
+.navbar .sign { }
+.navbar .nav .signin, .navbar .nav .signup {
+	padding: 7px 12px; margin: 8px 6px; border-radius: 2px; color: #fff; text-align: center; font-size: 16px; 
+}
+.navbar .nav .signin { width: 65px; height: 35px; border: 1px solid rgba(236,97,73,.7);  margin: 5px 5px 5px 5px; color: #ea6f5a; border-radius: 5px;}
+.navbar .nav .signup { width: 65px; height: 35px; margin: 5px 5px 5px 5px; border: 1px solid rgba(193,228,222,.7); font-size: 16px; color: #58c0d0; background-color: transparent; border-radius: 5px;}
+
+.navbar .nav .signin:hover { background-color: #ea6f5a; color:#fff; }
+.navbar .nav .signup:hover { background-color: #58c0d0; color:#fff;}
+
+.navbar .nav .publish {
+	padding: 3px 15px; margin: 12px 6px; border-radius: 2px; color: #ea6f5a; text-align: center;border: 1px solid rgba(236,97,73,.7);
+}
+
+.navbar .nav .publish:hover { background-color: #ea6f5a; color:#fff; }
+
+.navbar .nav .publishs { min-width: 140px; }
+.navbar .nav .publishs>li>a { padding: 5px 20px; font-size: 15px;}
+.navbar .nav .publishs .icon { width: 18px; margin-right: 10px;}
+
+.navbar .nav .publishs li:nth-child(n) a {color: #A576F7;}
+.navbar .nav .publishs li:nth-child(2n) a {color: #5EBCF2;}
+
+.navbar .nav .ava { padding: 4px 12px; margin: 4px 0 4px 0; transition: .15s all ease; }
+.navbar .nav .logout { font-size: 18px; padding: 4px 12px; margin: 12px 15px 5px 0px; transition: .15s all ease; }
+
+.navbar .nav>li .ava img { position: relative; width: 34px; height: 34px; margin: 0 auto; }
+.navbar .nav>li .ava:hover { color: #428bca; border-color: #428bca; }
+
+/* main */
+.wrap { position: relative; background-color: #f6f6f6; padding-top: 20px; padding-bottom: 30px; min-height: 520px;}
+.main { margin: 0;}
+.side-left {}
+.side-right { padding: 0 0 0 15px; margin-left: -15px;}
+
+
+/* footer */
+
+footer { background-color: #3a3e47; }
+footer .mode-link { margin: 15px auto 25px; }
+footer .mode-link .t-h3 { font-size: 14px; color: #b7bac1; line-height: 24px; border-bottom: 1px solid #484c57; }
+footer .mode-link .t-h3 a { color: #b7bac1; }
+footer .mode-link ul.list-inline li { line-height: 26px; }
+footer .mode-link ul.list-inline li a { color: #9398A2; font-size: 12px; }
+footer .mode-link ul.list-inline li a:hover { color: #b3c3d6; }
+
+footer .copy-right { margin-top: 25px; position: relative; }
+footer .copy-right { border-bottom: 1px solid #31353c; line-height: 28px; padding-bottom: 20px; display: block; }
+footer .copy-right,footer .copy-right span{ color: #9398A2; font-size: 12px;}
+footer .copy-right,footer .copy-right span a { color: #46d1da; font-size: 12px;}
+
+footer .footer-nav { background-color: #2d3037; height: 40px; line-height: 40px; border-top: 2px solid #00a388; text-align: center; }
+footer .footer-nav ul { margin: 0 auto; display: inline-block; }
+footer .footer-nav  ul li { border-right: 1px solid #26292e; padding: 0; float: left; line-height: 39px; -webkit-transition: all .2s; -moz-transition: all .2s; -ms-transition: all .2s; -o-transition: all .2s; transition: all .2s; }
+footer .footer-nav  ul li:first-child { border-left: 1px solid #26292e; }
+footer .footer-nav  ul li:hover { background-color: #3a3e47; }
+footer .footer-nav  ul li a { color: #b7bac1; display: block; padding: 0 8px; }
+
+.player {width:480px; height:400px; margin-left:auto; margin-right:auto;}
+
+/* Tablet (Portrait)
+================================================== */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.side-right { padding: 0 15px 0 15px; margin-left: 0;}
+
+	/*grids*/
+	.masonry-grid .masonry-entry.span_1_of_3,
+	.masonry-grid .masonry-entry.span_1_of_4 { width: 47.6% }
+
+	.site-content {width: 100%; max-width: 100%;}
+}
+/* Mobile (Portrait & Landscape)
+================================================== */
+@media only screen and (max-width: 767px) {
+	.side-right { padding: 0 15px 0 15px; margin-left: 0;}
+	.user-nav.first {margin-top: 15px;}
+
+	.col { width: 100%; margin-left: 0; margin-bottom: 25px; }
+	.masonry-grid { margin-left: 0; margin-right: 0; }
+	.masonry-entry { width: 47.5% !important; margin-bottom: 25px !important; }
+
+	.stream-head .user-post .act-icon { padding: 22px 30px; }
+}
+/* Mobile (Landscape)
+================================================== */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.masonry-grid { max-width: 480px; width: 80% !important; margin-left: auto; margin-right: auto; }
+	.masonry-entry { width:100% !important; }
+
+	.player {width:400px; height:334px;}
+
+	.stream-head .user-post .act-icon { padding: 12px 20px; }
+}
+/* Mobile (Portrait only)
+================================================== */
+@media only screen and (max-width: 479px) {
+
+	.masonry-entry {
+		width: 100% !important;
+		margin-bottom: 25px !important;
+	}
+
+	.player {
+		width: 320px;
+		height: 200px;
+	}
+
+	.stream-head .user-post .act-icon { padding: 20px 20px;}
+	.stream-head .user-post .act-icon i { font-size: 22px;}
+	.stream-head .user-post .act-icon .tip {display: none;}
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+    body,html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+
+    }
+    .left,
+    .right {
+      float: left;
+      width: 50%;
+      height: 100%;
+    }
+    /*.left { background-color: red; }
+    .right { background-color: yellow }*/
+
+  </style>
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+
+<META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT">
+
+<META HTTP-EQUIV="expires" CONTENT="0">
+</head>
+<body>
+
+
+
+
+<!--<h1 align="center">离线检测</h1>-->
+
+
+	<div class="left">
+				   <h3> 待检测文件</h3>
+                    <video controls  id="video"  height="90%" width="95%">
+
+					<source src="{{url_for ('static', filename='yuan/demo.mp4',_t=val1)}}">
+				</video>
+  </div>
+
+
+  <div class="right">
+  	<h3> 结果文件</h3>
+				<video controls  id="video1"  height="90%" width="95%">
+
+					<source src="{{url_for ('static', filename='img/demo2.mp4',_t=val1)}}">
+				</video>
+
+			</div>
+
+  <br/>
+
+
+
+<div align="center">
+   <form action="" enctype='multipart/form-data' method='POST'>
+         <input type="file" style="width:200px;height:30px;background:aqua" data-toggle="modal"  data-target=".signin_modal"  name="file" value="选择文件">
+          &nbsp &nbsp
+          <input type="submit"  style="width:120px;height:30px;background:greenyellow" data-toggle="modal"  data-target=".signin_modal" value="开始检测">
+         <br>
+         <br>
+     </form>
+
+ </div>
+
+
+
+</body>
+
+</html>

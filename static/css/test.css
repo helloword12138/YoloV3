@@ -1,0 +1,41 @@
+.lubo_container {
+				position: relative;
+				width: 590px;
+			}
+			
+			.lubo_jj {
+				width: 2360px;
+				font-size: 0px;
+				/*空格也是字符。设置字体0px,去掉空格宽度*/
+				position: relative;
+				/*要拉动胶卷，只有定位元素才能用left等进行移动*/
+			}
+			
+			.lubo_window {
+				border: 10px solid blue;
+				width: 590px;
+				overflow: hidden;
+			}
+			
+			.lubo_ind {
+				list-style-type: none;
+				padding: 0px;
+				/*因为用户默认为ol提供40px*/
+				margin: 0px;
+				left: 50%;
+				bottom: 10px;
+				position: absolute;
+				margin-left: -87px;
+				/*圈在正中心*/
+				z-index: 10;
+				/*如果你不修改值大于3，图片会盖住圈*/
+			}
+			
+			.lubo_ind li {
+				border: 20px solid blue;
+				width: 0px;
+				border-radius: 20px;
+				display: inline-block;
+				/*显示是内联，可以设置宽度和高度*/
+				height: 0px;
+			}
